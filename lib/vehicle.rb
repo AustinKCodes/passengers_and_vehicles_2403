@@ -11,4 +11,8 @@ class Vehicle
     def speeding?
         return @speeding
     end
+
+    def speed
+        return @speeding = true
+    end
 end
