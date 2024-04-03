@@ -13,4 +13,16 @@ RSpec.describe Vehicle do
 
         expect(vehicle.year).to eq("2001")
     end
+
+    it "returns make of vehicle" do
+        vehicle = Vehicle.new("2001", "Honda", "Civic")
+
+        expect(vehicle.make).to eq("Honda")
+    end
+
+    it "returns model of vehicle" do
+        vehicle = Vehicle.new("2001", "Honda", "Civic")
+
+        expect(vehicle.model).to eq("Civic")
+    end
 end
