@@ -16,4 +16,13 @@ class Vehicle
     def speed
         return @speeding = true
     end
+
+    def add_passenger(passenger)
+        @passengers << passenger
+    end
+
+    def num_adults
+        adults = @passengers.count {|passenger| passenger.age >= 18}
+        adults
+    end
 end
