@@ -1,7 +1,8 @@
-class Entry
-    attr_reader
+class Park
+    attr_reader :name, :entry_cost
 
-    def initialize
-        
+    def initialize(name, entry_cost)
+        @name = name
+        @entry_cost = entry_cost
     end
 end
